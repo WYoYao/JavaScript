@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  font-size: "14px";
+  /*禁止用户进行选择*/
+  -webkit-user-select:none;
+}
+
+.box{
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  /*实现边框的颜色*/
+  border: 1px solid #008000;
+  /*实现圆角的效果*/
+  border-radius: 10px;
+  /* x轴偏移3像素y轴偏移3像素  阴影的模糊半径是10像素 阴影的扩展半径是0 */
+  box-shadow: 3px 3px 10px 0 #DBEEDB;
+}
+.box thead{
+  background-color: #008000;
+  /*将字体的颜色改变为白色*/
+  color: #fff;
+}
+.box thead tr{
+  height: 35px;
+}
+.box thead tr th{
+  width: 100px;
+  text-align: center;
+}
+.box thead tr th.cursor{
+  cursor: pointer;
+}
+.box tbody tr{
+  height: 30px;
+}
+.box tbody tr.bg{
+  background:lightgreen;
+}
+.box tbody tr td{
+  width: 100px;
+  text-align: center;
+}
