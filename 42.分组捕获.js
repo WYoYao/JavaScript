@@ -33,3 +33,16 @@
     console.log(str.match(reg));
 
 })();
+
+
+
+;(function(){
+    //?:的意思是只匹配不捕获
+    var reg=/^(?:\d{2})(?:\d{4})(\d{4})(\d{2})(\d{2})(?:\d{2})(?:\d)(?:\d|x)$/;
+    var str='420683199310200319';
+
+    //有些内容是不用
+    console.log(reg.exec(str));
+    console.log(str.match(reg));
+
+})();
